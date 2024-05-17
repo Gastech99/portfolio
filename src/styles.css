@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(2, 81, 81);
+    color: white;
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto", sans-serif;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
+h3{
+    font-size: 2rem;
+    color: aquamarine;
+    margin: 0.25rem;
+}
+h4{
+    margin: 0.2rem;
+    color: blue;
+}
+
+.dark-section{
+    background-color: #21343c;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}

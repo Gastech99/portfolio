@@ -1,0 +1,9 @@
+.project{
+    display: flex;
+
+    img{
+        height: 70%;
+        width: 50%;
+        object-fit: cover;
+    }
+}

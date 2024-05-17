@@ -1,0 +1,10 @@
+<div class="skill-wrapper">
+  <div
+    *ngFor="let skill of skills; index as i"
+    class="skill"
+    [style.left]="i * (90 / skills.length) + '%'"
+    [style.top]="((i + 1) % 3) * 33 + '%'"
+  >
+    {{ skill }}
+  </div>
+</div>

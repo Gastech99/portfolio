@@ -1,0 +1,38 @@
+.links{
+    display: flex;
+    margin: 25px;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    margin: 0.25rem 1rem;
+    img{
+        width: 100px;
+    }
+    &::before{
+        content: "";
+        transition: all 0.2s;
+        position: absolute;
+        background: radial-gradient(#223640 40%, transparent 70%);
+        top: -25px;
+        left: -25px;
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        z-index: -5;
+    }
+    div.hidden-label{
+        opacity: 0;
+        color: white;
+        font-size: 0.85rem;
+    }
+    &:focus, &:hover{
+        &::before, div.hidden-label{
+            opacity: 1;
+        }
+    }
+}
